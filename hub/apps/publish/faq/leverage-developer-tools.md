@@ -111,6 +111,21 @@ Apps should be packaged using the **MSIX** or **MSI** formats for distribution t
 ---
 
 <details>
+<summary><strong>What are the advantages of using MSIX?</strong></summary>
+
+Advantages of MSIX include:
+
+- **Reliable installations and clean uninstallations**
+- **Optimized network usage** with differential updates
+- **Efficient storage management** through shared resources
+- **Enhanced security** with digital signing and app isolation
+- **Universal deployment** across various distribution channels and easy integration into IT management tools.
+
+</details>
+
+---
+
+<details>
 <summary><strong>How can I use promo codes to promote my app and what types are available?</strong></summary>
 
 Promo codes enable you to offer free access to your app or add-ons to selected customers, influencers, reviewers, or beta testers. Generated in Partner Center, promo codes come with unique redeemable URLs. Distributing these codes helps drive awareness, generate user reviews, incentivize engagement, and reward loyal customers.
@@ -143,46 +158,12 @@ Users clicking your badge will then automatically download and launch your app i
 ---
 
 <details>
-<summary><strong>What is WNS and how do I use it?</strong></summary>
-
-**WNS (Windows Push Notification Service)** is Microsoft's notification service for Windows apps. It allows apps to receive and display push notifications, such as toast notifications, tile updates, and badge updates. Notifications are routed via Microsoft's cloud infrastructure, delivering timely updates even when the app isn't actively running.
-
-
-Sending notifications via WNS involves these steps:
-
-1. **App obtains channel URI**: Your app requests a unique channel URI from WNS.
-2. **Server receives URI**: Your app sends the URI to your backend server.
-3. **Authenticate**: Your server authenticates with WNS using OAuth credentials.
-4. **Send notification**: Your server sends the notification to the channel URI using WNS.
-5. **Client receives notification**: The device receives and displays the notification.
-
-</details>
-
----
-
-<details>
-<summary><strong>What are the advantages of using MSIX?</strong></summary>
-
-Advantages of MSIX include:
-
-- **Reliable installations and clean uninstallations**
-- **Optimized network usage** with differential updates
-- **Efficient storage management** through shared resources
-- **Enhanced security** with digital signing and app isolation
-- **Universal deployment** across various distribution channels and easy integration into IT management tools.
-
-</details>
-
----
-
-<details>
 <summary><strong>What tools does Microsoft offer to engage customers?</strong></summary>
 
 Microsoft provides several tools to engage customers via Partner Center, including:
 
 - **Create customer groups** that include a subset of your app's customers for promotion, testing, and other purposes
 - **Targeted offers** for personalized promotions
-- **Product page experiments** (A/B testing) to optimize features
 - **Respond to reviews** mechanisms for customer relationship management
 
 These tools allow developers to enhance user engagement, retention, and satisfaction.
@@ -194,7 +175,7 @@ These tools allow developers to enhance user engagement, retention, and satisfac
 <details>
 <summary><strong>Can I respond to customer reviews?</strong></summary>
 
-Yes. Developers can respond directly to customer reviews through Partner Center. Public responses appear alongside reviews on the Store page, while a private email copy can be sent to reviewers (if applicable). Engaging professionally and constructively with reviews can greatly improve customer relations and foster a positive community around your app.
+Yes. Developers can respond directly to customer reviews through Partner Center. Public responses appear alongside reviews on the Store page. Engaging professionally and constructively with reviews can greatly improve customer relations and foster a positive community around your app.
 
 </details>
 
@@ -203,13 +184,11 @@ Yes. Developers can respond directly to customer reviews through Partner Center.
 <details>
 <summary><strong>What can I do through the Microsoft Store submission API?</strong></summary>
 
-The Microsoft Store submission API enables developers to automate app management tasks, including:
+The Microsoft Store submission API enables Win32 app developers to automate app management tasks, including:
 
 - Creating and submitting new app updates.
 - Uploading and managing app packages.
-- Managing package flights.
 - Updating metadata and Store listings.
-- Handling submissions for add-ons.
 
 You can integrate this API into your continuous integration or build workflows, automating routine tasks to streamline your publishing process.
 
